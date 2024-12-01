@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🐍 Modern Snake Game</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="game-wrapper">
+            <div class="header">
+                <h1>Snake<span class="accent">Game</span></h1>
+                <div class="score-container">
+                    <div class="current-score">Score: <span id="score">0</span></div>
+                    <div class="high-score">High Score: <span id="highScore">0</span></div>
+                </div>
+            </div>
+            
+            <canvas id="gameCanvas"></canvas>
+            
+            <div class="controls">
+                <button id="startBtn" class="btn primary">Start Game</button>
+                <button id="restartBtn" class="btn secondary" style="display: none;">Play Again</button>
+            </div>
+
+            <div class="instructions">
+                <h3>How to Play</h3>
+                <p>Use arrow keys or WASD to control the snake</p>
+                <div class="key-controls">
+                    <div class="key">↑</div>
+                    <div class="key-row">
+                        <div class="key">←</div>
+                        <div class="key">↓</div>
+                        <div class="key">→</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mobile-controls">
+                <button id="upBtn" class="control-btn"><i class="fas fa-chevron-up"></i></button>
+                <div class="horizontal-controls">
+                    <button id="leftBtn" class="control-btn"><i class="fas fa-chevron-left"></i></button>
+                    <button id="rightBtn" class="control-btn"><i class="fas fa-chevron-right"></i></button>
+                </div>
+                <button id="downBtn" class="control-btn"><i class="fas fa-chevron-down"></i></button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
